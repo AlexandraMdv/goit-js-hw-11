@@ -1,5 +1,6 @@
 export function createMarkup({webformatURL, largeImageURL, tags, likes, views, comments, downloads}) {
     return `
+    <a href="${largeImageURL}">
         <div class="photo-card">
             <img src="${webformatURL}" alt="${tags}" loading="lazy" />
             <div class="info-item">
@@ -20,6 +21,7 @@ export function createMarkup({webformatURL, largeImageURL, tags, likes, views, c
                 </p>
             </div>
         </div>
+    </a>
     `;
 }
 
